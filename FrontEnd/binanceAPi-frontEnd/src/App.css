@@ -1,0 +1,36 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.symbol-list, .price-ticker {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .app {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .symbol-list {
+    flex: 1;
+    margin-right: 20px;
+  }
+  .price-ticker {
+    flex: 2;
+  }
+}
